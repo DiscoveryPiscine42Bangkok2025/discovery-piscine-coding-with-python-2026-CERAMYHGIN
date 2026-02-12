@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 def king(rows):
     for r, row in enumerate(rows):
         c = row.find('K')
