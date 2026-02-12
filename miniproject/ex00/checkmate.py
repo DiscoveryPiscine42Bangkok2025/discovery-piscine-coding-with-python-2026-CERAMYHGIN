@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-def king_kong(rows):
+def king(rows):
     for r, row in enumerate(rows):
         c = row.find('K')
         if c != -1:
@@ -29,7 +29,7 @@ def checkmate(board):
             print("Fail")
             return
 
-    k_r, k_c = king_kong(rows)
+    k_r, k_c = king(rows)
 
     if k_r == -1:
         print("Fail")
@@ -74,3 +74,4 @@ def checkmate(board):
             break 
 
     print("Fail")
+
